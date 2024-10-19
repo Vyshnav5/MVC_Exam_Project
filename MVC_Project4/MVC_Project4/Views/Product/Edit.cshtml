@@ -1,0 +1,20 @@
+﻿@model movie
+
+@{
+
+}
+<h1>Create</h1>
+<form method="post" class="row g-3">
+    <div class="col-md-6">
+        <input type="hidden" asp-for="Id" />
+        <label asp-for="Title" for="inputEmail4" class="form-label">title</label>
+        <input asp-for="Title" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+        <label asp-for="price" for="inputPassword4" class="form-label">Price</label>
+        <input asp-for="price" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary" asp-controller="Product" asp-action="Edit">Submit</button>
+    </div>
+</form>

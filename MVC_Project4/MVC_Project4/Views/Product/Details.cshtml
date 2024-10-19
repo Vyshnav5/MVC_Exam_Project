@@ -1,0 +1,20 @@
+﻿@model movie
+
+@{
+
+}
+<h1>Details</h1>
+<div> 
+    
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayFor(model => model.Id)
+        </dt>
+        <dt class="col-sm-4">
+            @Html.DisplayFor(model => model.Title)
+        </dt>
+        <dd class="col-sm-6">
+            @Html.DisplayFor(model => model.price)
+        </dd>
+    </dl>
+</div>
